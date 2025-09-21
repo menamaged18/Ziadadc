@@ -3,7 +3,7 @@ import Head from '../components/Head';
 import WhyChooseUs from '../components/WhyChooseUs';
 import FAQs from '../components/FAQs';
 import Footer from '../components/Footer';
-import AboutPage from '@/components/About';
+import AboutPage from '../components/About';
 
 export default function Home() {
   return (

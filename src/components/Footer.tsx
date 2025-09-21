@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -6,23 +8,23 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="hover:text-blue-400">About</a></li>
-              <li><a href="#why-choose-us" className="hover:text-blue-400">Why Us</a></li>
-              <li><a href="#faqs" className="hover:text-blue-400">FAQs</a></li>
+              <li><Link href="#about" className="hover:text-blue-400">About</Link></li>
+              <li><Link href="#why-choose-us" className="hover:text-blue-400">Why Us</Link></li>
+              <li><Link href="#faqs" className="hover:text-blue-400">FAQs</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
-              <li><a href="#" className="hover:text-blue-400">Help Center</a></li>
+              <li><Link href="#" className="hover:text-blue-400">Contact Us</Link></li>
+              <li><Link href="#" className="hover:text-blue-400">Help Center</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-400">Twitter</a></li>
-              <li><a href="#" className="hover:text-blue-400">LinkedIn</a></li>
+              <li><Link href="#" className="hover:text-blue-400">Twitter</Link></li>
+              <li><Link href="#" className="hover:text-blue-400">LinkedIn</Link></li>
             </ul>
           </div>
         </div>
