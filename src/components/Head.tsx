@@ -15,7 +15,7 @@ const Head: React.FC = () => {
             <span className="block mt-2 text-red-700 hover:text-red-800">Innovations</span>
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join thousands of successful businesses who've accelerated their growth with our proven solutions. 
+            Join thousands of successful businesses who&apos;ve accelerated their growth with our proven solutions. 
             Ready to unlock your potential?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
