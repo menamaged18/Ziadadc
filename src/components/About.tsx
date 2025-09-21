@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AboutPage: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const AboutPage: React.FC = () => {
       {/* Main Content */}
       <section 
         id="about"
-        className="py-18 bg-gray-50"
+        className="py-18 bg-gray-50 max-w-7xl mx-auto"
         >
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -48,12 +49,13 @@ const AboutPage: React.FC = () => {
           <p className="text-lg text-gray-600 mb-6">
             Partner with Ziada Company to take your business to new heights in the UAE and beyond.
           </p>
-          <a
-            href="/contact"
+          <Link
+            // href="/contact"
+            href="/"
             className="inline-block bg-[#c21d25] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#a11820] transition"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
     </>

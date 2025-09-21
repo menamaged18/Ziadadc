@@ -38,28 +38,32 @@ const BusinessSetupDropdown: React.FC = () => {
         } lg:group-hover:block lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-full w-full lg:w-48 bg-white lg:shadow-lg rounded-md overflow-hidden z-20 transition-all duration-200 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible`}
       >
         <Link
-          href="/company-formation"
+          // href="/company-formation"
+          href="/" // <-- to solve deployment issue
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
           Company Formation
         </Link>
         <Link
-          href="/business-bank-account"
+          // href="/business-bank-account"
+          href="/" // <-- to solve deployment issue
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
           Business Bank Account
         </Link>
         <Link
-          href="/residency-by-investment"
+          // href="/residency-by-investment"
+          href="/" // <-- to solve deployment issue
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
           Residency by Investment
         </Link>
         <Link
-          href="/startup-visa"
+          // href="/startup-visa"
+          href="/" // <-- to solve deployment issue
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
