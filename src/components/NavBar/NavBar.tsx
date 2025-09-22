@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BusinessSetupDropdown from './BusinessSetupDropdown';
-import ServiceDropDown from './ServiceDropDown';
+// import ServiceDropDown from './ServiceDropDown';
+import More from './More';
 
 const NavBar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,6 +12,10 @@ const NavBar: React.FC = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const handleGetStarted = () =>{
+    window.location.href = '#Contact'
+  }
   
   return (
     <nav className="bg-white shadow-md fixed w-full z-10">
@@ -29,19 +34,20 @@ const NavBar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-4">
             <BusinessSetupDropdown />
-            <ServiceDropDown />
-            <Link href="#about" className="text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md">
-              About
-            </Link>
-            <Link href="#why-choose-us" className="text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md">
-              Why Us
-            </Link>
-            <Link href="#faqs" className="text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md">
-              FAQs
-            </Link>
-            <button className="bg-[#c21d25] text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition">
+            {/* <ServiceDropDown /> */}
+            <Link
+              href="#faqs"
+              className="block px-4 py-2 text-gray-700  hover:text-[#1b6a3d]"
+            >
+              Spain
+            </Link>  
+            <More />          
+            <button 
+              onClick={handleGetStarted}
+              className="bg-[#c21d25] text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition cursor-pointer"
+              >
               Get Started
-            </button>
+            </button> 
           </div>
           {/* Hamburger Button for Mobile */}
           <div className="lg:hidden flex items-center">
@@ -81,31 +87,17 @@ const NavBar: React.FC = () => {
         <div className="lg:hidden bg-white shadow-md">
           <div className="px-4 pt-2 pb-4 space-y-2">
             <BusinessSetupDropdown />
-            <ServiceDropDown />
-            <Link
-              href="#about"
-              className="block text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md"
-              onClick={toggleMobileMenu}
-            >
-              About
-            </Link>
-            <Link
-              href="#why-choose-us"
-              className="block text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md"
-              onClick={toggleMobileMenu}
-            >
-              Why Us
-            </Link>
+            {/* <ServiceDropDown /> */}
             <Link
               href="#faqs"
-              className="block text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md"
-              onClick={toggleMobileMenu}
+              className="block px-4 py-2 text-gray-700 hover:text-[#1b6a3d]"
             >
-              FAQs
+              Spain
             </Link>
+            <More />
             <button
               className="w-full bg-[#c21d25] text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition text-left"
-              onClick={toggleMobileMenu}
+              onClick={handleGetStarted}
             >
               Get Started
             </button>

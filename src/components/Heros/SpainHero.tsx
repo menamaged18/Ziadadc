@@ -1,22 +1,25 @@
 "use client";
 import React from 'react';
+import { IHero } from '../../interfaces/IHero';
+import HeroToggle from './HeroToggle';
 
-const Head: React.FC = () => {
+
+const SpainHero: React.FC<IHero> = ({setShowUaeHero, showUaeHero}) => {
   return (
-    <section
-      className="pt-40 pb-40 bg-cover bg-center relative min-h-[500px] flex items-center"
-      style={{ backgroundImage: `url(/UAE.jpg)` }}
-    >
+<section
+  className="h-[600px] pt-40 pb-40 bg-cover bg-center relative flex items-center"
+  style={{ backgroundImage: `url(/Barcelona.jpg)` }}
+>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Transform Your Business with 
-            <span className="block mt-2 text-red-700 hover:text-red-800">Innovations</span>
+            Want to immigrate to   
+            <span className="block mt-2 text-red-700 hover:text-red-800">Spain</span>
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join thousands of successful businesses who&apos;ve accelerated their growth with our proven solutions. 
-            Ready to unlock your potential?
+            Join Hundereds of successful Immigrations to Spain.
+            Ready?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
@@ -32,8 +35,10 @@ const Head: React.FC = () => {
           </div>
         </div>
       </div>
+      <HeroToggle setShowUaeHero={setShowUaeHero} showUaeHero={showUaeHero} />
+      <p className='text-white text-4xl font-bold absolute top-130 left-1/2 -translate-x-1/2 -translate-y-1/2'>or</p>
     </section>
   );
 };
 
-export default Head;
+export default SpainHero;
