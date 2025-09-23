@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-const ServiceDropDown: React.FC = () => {
+const PageOptions: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -20,7 +20,7 @@ const ServiceDropDown: React.FC = () => {
         onClick={toggleDropdown}
         className="flex items-center text-gray-700 hover:text-[#1b6a3d] px-3 py-2 rounded-md w-full text-left lg:w-auto"
       >
-        Our Services
+        Page
         <svg
           className={`ml-2 w-4 h-4 transform transition-transform duration-200 ${isOpen ? 'rotate-180' : 'group-hover:rotate-180'}`}
           fill="none"
@@ -38,24 +38,43 @@ const ServiceDropDown: React.FC = () => {
         } lg:group-hover:block lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-full w-full lg:w-48 bg-white lg:shadow-lg rounded-md overflow-hidden z-20 transition-all duration-200 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible`}
       >
         <Link
-        //   href="/spain-visa"
-          href="/" // <-- to solve deployment issue
+          href="#about" 
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
-          Spain Visa
+          About
         </Link>
         <Link
-        //   href="/company-formation"
-          href="/" // <-- to solve deployment issue
+          href="#why-choose-us" 
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
-          Company Formation
+          Why Us
+        </Link>
+        <Link
+          href="#faqs" 
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
+          onClick={closeDropdown}
+        >
+          FAQs
+        </Link>
+        <Link
+          href="#Services" 
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
+          onClick={closeDropdown}
+        >
+          Our Services
+        </Link>
+        <Link
+          href="#Contact" 
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
+          onClick={closeDropdown}
+        >
+          Contact
         </Link>
       </div>
     </div>
   );
 };
 
-export default ServiceDropDown;
+export default PageOptions;

@@ -37,29 +37,34 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <NavBar />
       <main className="relative">
-        <AnimatePresence mode="wait">
-          {showUaeHero ? (
-            <motion.div
-              key="uae-hero"
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: 100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <UAEHero setShowUaeHero={setShowUaeHero} showUaeHero={showUaeHero} />
-            </motion.div>
-          ) : (
-            <motion.div
-              key="spain-hero"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <SpainHero setShowUaeHero={setShowUaeHero} showUaeHero={showUaeHero} />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div className="w-full overflow-hidden">
+          <AnimatePresence mode="wait">
+            {showUaeHero ? (
+              <motion.div
+                key="uae-hero"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: 100, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden" 
+              >
+                <UAEHero setShowUaeHero={setShowUaeHero} showUaeHero={showUaeHero} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="spain-hero"
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -100, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden" 
+              >
+                <SpainHero setShowUaeHero={setShowUaeHero} showUaeHero={showUaeHero} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
         <AboutPage />
         <ServicesSection />
         <WhyChooseUs />

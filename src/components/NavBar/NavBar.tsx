@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BusinessSetupDropdown from './BusinessSetupDropdown';
-// import ServiceDropDown from './ServiceDropDown';
 import More from './More';
+import PageOptions from './PageOptions';
 
 const NavBar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const NavBar: React.FC = () => {
   }
   
   return (
-    <nav className="bg-white shadow-md fixed w-full z-10">
+    <nav className="bg-white shadow-md fixed w-full z-999">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -33,8 +33,8 @@ const NavBar: React.FC = () => {
           </div>
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-4">
+            <PageOptions />
             <BusinessSetupDropdown />
-            {/* <ServiceDropDown /> */}
             <Link
               href="#faqs"
               className="block px-4 py-2 text-gray-700  hover:text-[#1b6a3d]"
@@ -86,10 +86,10 @@ const NavBar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="px-4 pt-2 pb-4 space-y-2">
+            <PageOptions />
             <BusinessSetupDropdown />
-            {/* <ServiceDropDown /> */}
             <Link
-              href="#faqs"
+              href="/"
               className="block px-4 py-2 text-gray-700 hover:text-[#1b6a3d]"
             >
               Spain

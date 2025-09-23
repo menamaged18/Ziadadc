@@ -38,57 +38,14 @@ const More: React.FC = () => {
         } lg:group-hover:block lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-full w-full lg:w-48 bg-white lg:shadow-lg rounded-md overflow-hidden z-20 transition-all duration-200 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible`}
       >
         <Link
-          href="#about"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          About
-        </Link>
-        <Link
-          href="#why-choose-us"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          Why Us
-        </Link>
-        <Link
-          href="#faqs"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          FAQs
-        </Link>
-        <Link
-          href="#Services"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          Our Services
-        </Link>
-        <Link
-          href="#Contact"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          Contact
-        </Link>
-        <Link
-          // href="#Services"
           href="/"
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
-          onClick={closeDropdown}
-        >
-          Our Clients Reviews
-        </Link>
-        <Link
-          href="#faqs"
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
           Licence
         </Link>
         <Link
-          href="#faqs"
+          href="/"
           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#1b6a3d]"
           onClick={closeDropdown}
         >
