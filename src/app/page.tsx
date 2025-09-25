@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
-import NavBar from '../components/NavBar/NavBar';
 import UAEHero from '../components/Heros/UAEHero';
 import SpainHero from '../components/Heros/SpainHero';
 import WhyChooseUs from '../components/WhyChooseUs';
@@ -10,6 +9,7 @@ import Footer from '../components/Footer';
 import AboutPage from '../components/About';
 import ServicesSection from '../components/Services';
 import ContactSection from '../components/Contact';
+import PopUpMessage from '../components/PopUpMessage';
 
 export default function Home() {
   const [showUaeHero, setShowUaeHero] = useState(true);
@@ -68,6 +68,8 @@ export default function Home() {
         <WhyChooseUs />
         <FAQs />
         <ContactSection />
+
+        <PopUpMessage />
       </main>
       <Footer />
     </div>
