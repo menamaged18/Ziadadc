@@ -35,7 +35,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <NavBar />
       <main className="relative">
         <div className="w-full overflow-hidden">
           <AnimatePresence mode="wait">
@@ -64,7 +63,6 @@ export default function Home() {
             )}
           </AnimatePresence>
         </div>
-
         <AboutPage />
         <ServicesSection />
         <WhyChooseUs />
