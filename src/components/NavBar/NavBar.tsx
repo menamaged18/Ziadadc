@@ -44,7 +44,7 @@ const NavBar: React.FC = () => {
             <More />          
             <button 
               onClick={handleGetStarted}
-              className="bg-[#c21d25] text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition cursor-pointer"
+              className="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition cursor-pointer"
               >
               Get Started
             </button> 
@@ -96,7 +96,7 @@ const NavBar: React.FC = () => {
             </Link>
             <More />
             <button
-              className="w-full bg-[#c21d25] text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition text-left"
+              className="w-full bg-red-600 text-white px-4 py-2 rounded-md hover:bg-[#a11820] transition text-left"
               onClick={handleGetStarted}
             >
               Get Started

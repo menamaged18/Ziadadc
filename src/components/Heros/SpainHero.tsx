@@ -15,7 +15,7 @@ const SpainHero: React.FC<IHero> = ({setShowUaeHero, showUaeHero}) => {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white md:mb-6 mb-3 leading-tight">
             Want to immigrate to   
-            <span className="block mx-auto mt-4 p-2 w-34 rounded-2xl text-white bg-[#c21d25] transition-all transform hover:scale-105 duration-300">Spain</span>
+            <span className="block mx-auto mt-4 p-2 w-34 rounded-2xl text-white bg-red-800 transition-all transform hover:scale-105 duration-300">Spain</span>
           </h2>
           <p className="md:text-xl text-lg text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
             Join Hundereds of successful Immigrations to Spain.
@@ -23,7 +23,7 @@ const SpainHero: React.FC<IHero> = ({setShowUaeHero, showUaeHero}) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
-              className="text-white font-semibold md:py-4 md:px-8 py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer bg-[#c21d25] border border-[#c21d25] hover:bg-[#a01820] hover:border-[#a01820]"
+              className="text-white font-semibold md:py-4 md:px-8 py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer bg-red-800 hover:bg-red-900 "
             >
               Get Started Today
             </button>

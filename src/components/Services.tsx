@@ -47,7 +47,7 @@ const ServicesSection: React.FC = () => {
               What We Offer
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="bg-gradient-to-r from-[#1B6A3D] to-[#14502E] bg-clip-text text-transparent">Services</span>
+               <span className="bg-gradient-to-r from-[#1B6A3D] to-[#14502E] bg-clip-text text-transparent">Our Services</span>
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#C21D25] via-[#1B6A3D] to-[#14502E] rounded-full mx-auto mb-6"></div>
           </div>
